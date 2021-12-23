@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author LAB_520_PC_354
+ */
+public class Datatype {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input=new Scanner(System.in);
+        String str=input.nextLine();
+        int b1=Integer.parseInt(str);
+        for(int i=0;i<b1;i++)
+        {
+            String str2=input.nextLine();
+            
+            try{
+                long b2=Long.parseLong(str2);
+                /*if(b2==1 || b2==0)
+                {
+                    System.out.println(b2+" can be fitted in:");
+                    System.out.println("* boolean");
+                    System.out.println("* byte");
+                    System.out.println("* short");
+                    System.out.println("* int");
+                    System.out.println("* long");
+                    continue;
+                }*/
+                if(b2==(byte)b2)
+                {
+                    System.out.println(b2+" can be fitted in:");
+                    System.out.println("* byte");
+                    System.out.println("* short");
+                    System.out.println("* int");
+                    System.out.println("* long");
+                     continue;
+                }
+                else if(b2==(short)b2)
+                {
+                      System.out.println(b2+" can be fitted in:");
+                     System.out.println("* short");
+                    System.out.println("* int");
+                    System.out.println("* long");
+                     continue;
+                }
+                else if(b2==(int)b2)
+                {
+                      System.out.println(b2+" can be fitted in:");
+                    System.out.println("* int");
+                    System.out.println("* long");
+                     continue;
+                }
+                else {
+                      System.out.println(b2+" can be fitted in:");
+                    System.out.println("* long");
+                     continue;
+                }
+            }
+            catch(NumberFormatException y)
+                
+            {
+                System.out.println(str2+" can't be fitted anywhere.");
+                 continue;
+               
+                
+        }
+    }
+    }
+}
+    
+
